@@ -1,5 +1,11 @@
 """Median calculator."""
-"""ENTER YOUR SOLUTION HERE!"""
+def calcMedian(numList):
+    numList.sort()
+
+    if (len(numList) % 2) == 1:
+        return numList[len(numList)//2]
+    else:
+        return (numList[len(numList)//2 - 1] + numList[len(numList)//2]) / 2
 
 while True:
     try:
